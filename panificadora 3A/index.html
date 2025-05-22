@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Controle de Estoque - loja de carros</h1>
+
+    <!-- Formulário para adicionar os novos produtos -->
+    <form id="form-produto">
+        <input type="text" id="nome" placeholder="Nome do produto" required>
+        <input type="number" id="quantidade" placeholder="marca" required>
+        <input type="text" id="unidade" placeholder="Unidade" required>
+        <input type="text" id="categoria" placeholder="Categoria" required>
+        <button type="submit">Adicionar carro</button>
+    </form>
+
+    <!-- Campo de busca -->
+    <input type="text" id="busca" placeholder="Buscar produto...">
+
+    <!-- Tabela para exibir os produtos -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>marca</th>
+                <th>Unidade</th>
+                <th>Categoria</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody id="tabela-produto">
+            <!-- Produtos serão inseridos aqui via JavaScript -->
+        </tbody>
+    </table>
+</body>
+</html>
